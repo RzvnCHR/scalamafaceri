@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marketing Digital și Website-uri profesionale la un preț corect!">
+    <meta name="keywords" content="scalamafaceri.ro marketing reclame website">
+    <title>scalamafaceri.ro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<style>
+header {
+  height: 15vh;
+}
+.card{
+    width: 45%;
+}
+.title {
+  font-size: 4.5vh;
+}
+.desc {
+  font-size: 3vh;
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    width: 90%;
+  }
+      .hot-badge{
+      font-size: 1rem;
+    }
+
+    .title {
+      font-size: 3.5vh;
+    }
+    .desc {
+      font-size: 3vh;
+    }
+    .old-price {
+      font-size: 3vh;
+      margin: 0;
+    }
+    .price {
+      font-size: 5vh;
+    }
+
+    .go-back-btn {
+      display: none;
+    }
+}
+
+
+</style>
+<body>
+      <header>
+        <nav id="navbar">
+          <div id="particles"></div>
+          <div class="navbar">
+            <div><img class="logo" src="logo.png"></div>
+            <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="index.html">Pachete</a>
+    <a href="website.html">Website</a>
+    </div>
+<div class="menu-toggle" id="menuToggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+    </nav>
+      
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.getElementById("navbar");
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.getElementById('navLinks');
+  const navItems = navLinks.querySelectorAll('a');
+
+  let lastScrollY = window.scrollY;
+
+  // Ascunde/arată navbar la scroll
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 50) {
+      navbar.classList.add("hidden");
+    } else {
+      navbar.classList.remove("hidden");
+    }
+    lastScrollY = window.scrollY;
+  });
+
+  // Toggle meniul mobil
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active'); 
+  });
+
+  // Închide meniul la click pe link
+  navItems.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      menuToggle.classList.remove('active');
+    });
+  });
+});
+    
+    </script>
+  
+</header>
+<div class="website-container">
+  <div class="title-container">
+    <button class="go-back-btn" onclick="history.back()">
+      <i class='bx bxs-left-arrow'></i>
+    </button>
+    <h1 class="wow final1" style="font-size: 2.5rem">OFERTE WEBSITE</h1>
+  </div>
+</div>
+<div class="container">
+  
+  <!-- Card 1 -->
+  <div class="card">
+    
+    
+      <div class="title">WEBSITE STATIC<br>(DE PREZENTARE)</div>
+      <div class="desc">
+        ✅4–5 Secțiuni statice
+        <br>
+        ✅Design modern
+        <br>
+        ✅Copywriting
+        <br>
+        ✅Integrare formular de contact
+        <br>
+        ✅Optimizat pentru toate tipurile de device-uri
+        <br>
+        ✅Preț fix
+      </div>
+      <div class="price"><span class="old-price">2000</span> 1500 RON</div>
+      <div class="btns">
+        <div class="call-now-wrapper">
+  <a href="tel:+40775302543" class="btn call-now-btn">📞</a>
+  <a 
+  href="https://wa.me/40775302543?text=Salut!%20%20Vreau%20mai%20multe%20detalii%20despre%20WEBSITE-STATIC!" 
+  target="_blank" 
+  class="btn cart">
+  WhatsApp
+</a>
+</div>
+</div>
+</div>
+
+<!-- Card 2 -->
+<div class="card">
+  <div class="title">WEBSITE DINAMIC<br>(E-COMMERCE)</div>
+  <div class="desc">✅Multiple secțiuni
+    <br>
+    ✅Design modern
+    <br>
+    ✅20 Produse
+    <br>
+    ✅Copywriting
+    <br>
+    ✅Integrare formular de contact
+    <br>
+    ✅Optimizat pentru toate tipurile de device-uri
+    <br>
+    ✅Preț fix
+  </div>
+  <div class="price"><span class="old-price">4000</span>3000 RON</div>
+  <div class="btns">
+    <div class="call-now-wrapper">
+      <a href="tel:+40775302543" class="btn call-now-btn">📞</a>
+      <a 
+      href="https://wa.me/40775302543?text=Salut!%20%20Vreau%20mai%20multe%20detalii%20despre%20WEBSITE-DINAMIC!" 
+      target="_blank" 
+      class="btn cart">
+      WhatsApp
+    </a>
+  </div>
+</div>
+</div>
+<center><h4 style="text-transform: uppercase;"><i>Costurile pentru domeniu și găzduire (hosting) nu sunt incluse în preț.</i></h4></center>
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+
+  </div>
+
+    <footer id="footer">
+      <div class="wow footer">    
+        <p>
+          &copy; 2025 scalamafaceri.ro<br> All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    
+<!------------SCRIPT-URI----------->
+    
+    <script>
+          new WOW().init();
+window.addEventListener('load', () => {
+  wow.sync();
+});
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+<script src="counter.js"></script>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+      strings: ["^500", "Branding Design^1000", "Google Ads^1000","Facebook Ads^1000", "Web Design^1000",  "Social Media Management^1000"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    })
+      </script>
+
+</body>
+</html>
